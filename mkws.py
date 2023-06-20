@@ -33,7 +33,6 @@ for i in range(0,p_imax):
             PHI[k] = PHI_0_min + k*(PHI_0_max - PHI_0_min)/(PHI_kmax - 1);
             x = 'H2:%.2f O2:1 N2:3.76' % PHI[k];
             U_CJ[i , j , k] = sd.postshock.CJspeed(p0[i] , T0[j], x , mech);
-            print("gowno")
         k = 0;
     j = 0;
 
